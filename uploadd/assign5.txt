@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div class="main">
+        <nav class="nav">
+            <img class="img" src="https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-logo.png" />
+            <div class="nav-card">
+                <ul type="none" class="nav-list visibility">
+                    <a href="#">
+                        <li class="options">Features</li>
+                    </a>
+                    <a href="#">
+                        <li class="options">About</li>
+                    </a>
+                    <a href="#">
+                        <li class="options">Contacts</li>
+                    </a>
+                    <a href="#">
+                        <li class="options">Sign Up</li>
+                    </a>
+                </ul>
+                <button id="button">
+                    <div class="menu-icon"></div>
+                    <div class="menu-icon"></div>
+                    <div class="menu-icon"></div>
+                </button>
+            </div>
+        </nav>
+        <ul type="none" class="nav-list2 visibility2" id="navList2">
+            <li class="nav-list2-options">Features</li>
+            <li class="nav-list2-options">About</li>
+            <li class="nav-list2-options">Contacts</li>
+            <li class="nav-list2-options">Sign Up</li>
+        </ul>
+        <div class="bg-image">
+            <h1 class="text-white para">Astudent Startup Accleration program!</h1>
+        </div>
+
+    </div>
+</body>
+
+</html>
+--------------------------------------------------------
+css
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.img {
+    height: 50px;
+    width: 100px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.nav-list2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.visibility {
+    display: none;
+}
+
+.visibility2 {
+    display: none;
+}
+
+
+.options {
+    margin-right: 10px;
+}
+
+.nav-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-icon {
+    width: 50px;
+    height: 10px;
+    background-color: black;
+    margin-bottom: 5px;
+}
+
+.para {
+    font-size: 30px;
+}
+
+.nav-list2-options {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.text-white {
+    color: white;
+}
+
+.bg-image {
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-sm-bg.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:768px) {
+    .bg-image {
+        background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-lg-bg.png");
+    }
+
+    button {
+        display: none;
+    }
+
+    .visibility {
+        display: block;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .options {
+        font-size: 30px;
+    }
+
+    .img {
+        width: 200px;
+        height: 80px;
+    }
+}
